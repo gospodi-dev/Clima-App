@@ -27,10 +27,10 @@ struct WeatherManager {
             
             // 3. Give the session a task
             
-            session.dataTask(with: url, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
+            let task = session.dataTask(with: url, completionHandler: <#T##(Data?, URLResponse?, Error?) -> Void#>)
             
             // 4. Start the task
-            
+            task.resume()
         }
         
         
