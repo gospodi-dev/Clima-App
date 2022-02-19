@@ -20,9 +20,15 @@ struct WeatherManager {
         
         // 1. Create a URL
         
-        let url = URL(string: urlString)
+        if let url = URL(string: urlString) {
+            // 2. Create a URLSession
+            
+            let session = URLSession(configuration: .default)
+            
+            
+        }
         
-        // 2. Create a URLSession
+        
         // 3. Give the session a task
         // 4. Start the task
         
