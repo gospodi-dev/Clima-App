@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct WeatherDate: Decodable {
+    let name: String
+}

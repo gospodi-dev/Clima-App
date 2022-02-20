@@ -35,7 +35,13 @@ struct WeatherManager {
     }
     
     func parseJSON(weatherData: Data) {
-        <#function body#>
+        let decoder = JSONDecoder()
+        do {
+            let decodedData = try decoder.decode(WeatherDate.self, from: weatherData)
+            print(decodedData.name)
+        } catch {
+            print(error)
+        }
     }
 }
 
