@@ -25,6 +25,7 @@ class WeatherViewController: UIViewController {
     }
 }
 
+//MARK:  -
 extension WeatherViewController: UITextFieldDelegate {
     
     @IBAction func searchPressed(_ sender: UIButton) {
@@ -57,6 +58,7 @@ extension WeatherViewController: UITextFieldDelegate {
     
 }
 
+//MARK: - 
 extension WeatherViewController: WeatherManagerDelegate {
     
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
